@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/exercise2_redo_book_ui/screen/screen_detail.dart';
 import 'package:flutter_ui/exercise2_redo_book_ui/widgets/custom_cart.dart';
 
 class HomeScreenRE extends StatelessWidget {
@@ -20,24 +21,32 @@ class HomeScreenRE extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: const [
+                children: [
                   Custom_Card(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const detail_screen(),
+                        ),
+                      );
+                    },
                     imageURL:
                         "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
                   ),
-                  Custom_Card(
+                  const Custom_Card(
                     imageURL:
                         "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
                   ),
-                  Custom_Card(
+                  const Custom_Card(
                     imageURL:
                         "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
                   ),
-                  Custom_Card(
+                  const Custom_Card(
                     imageURL:
                         "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
                   ),
-                  Custom_Card(
+                  const Custom_Card(
                     imageURL:
                         "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
                   ),
