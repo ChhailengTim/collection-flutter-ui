@@ -17,20 +17,63 @@ class HomeScreenRE extends StatelessWidget {
               "New Books",
               style: Theme.of(context).textTheme.titleLarge!.copyWith(),
             ),
-            Row(
-              children: const [
-                Custom_Card(
-                  imageURL:
-                      "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
-                ),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: const [
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                ],
+              ),
             ),
             Text(
               "For You",
               style: Theme.of(context).textTheme.titleLarge!.copyWith(),
             ),
-            Row(
-              children: const [],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: const [
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                  Custom_Card(
+                    imageURL:
+                        "https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324_3x4.jpg",
+                  ),
+                ],
+              ),
             ),
           ],
         ),
