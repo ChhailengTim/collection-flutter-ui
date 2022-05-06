@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/1_materialapp_scaffold/lesson1.dart';
+import 'package:flutter_ui/1_materialapp_scaffold/lesson1-ex.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: MakeHomeScreen(),
+        body: TheShow(),
       ),
     );
   }
