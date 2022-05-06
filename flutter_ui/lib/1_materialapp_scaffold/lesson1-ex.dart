@@ -12,12 +12,31 @@ class TheShow extends StatelessWidget {
           centerTitle: true,
           title: const Text("Flutter Coding Exercise"),
         ),
+        // body: Column(
+        //   children: const [
+        //     Text("My body"),
+        //     Text("My body"),
+        //     Text("My body"),
+        //     Text("My body"),
+        //   ],
         body: Column(
-          children: const [
-            Text("My body"),
-            Text("My body"),
-            Text("My body"),
-            Text("My body"),
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("My body"),
+            const Text("My body"),
+            const Text("My body"),
+            const Text("My body"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const [
+                Text("Row simple"),
+                Text("Row simple"),
+                Text("Row simple"),
+                Text("Row simple"),
+              ],
+            ),
           ],
         ),
         bottomNavigationBar: BottomAppBar(
