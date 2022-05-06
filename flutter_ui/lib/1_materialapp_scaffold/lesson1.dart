@@ -5,8 +5,22 @@ class MakeHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Hello Flutter"),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.blue,
+          child: IconButton(
+            onPressed: () {
+              debugPrint("Welcome to flutter");
+            },
+            icon: const Icon(Icons.home),
+          ), //Icon(Icons.home),
+        ),
+      ),
     );
   }
 }
