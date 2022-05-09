@@ -42,6 +42,27 @@ class InforScreen extends StatelessWidget {
                   height: (_heigh / 2) + 20,
                   width: _width,
                 ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "The Memories Police",
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleLarge!
+                              .copyWith(fontWeight: FontWeight.bold),
+                        ),
+                        const Spacer(),
+                        Icon(
+                          Icons.bookmark,
+                          color: Colors.amber[700],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
