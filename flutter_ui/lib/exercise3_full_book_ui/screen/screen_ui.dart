@@ -23,6 +23,8 @@ class HomeScreenUI extends StatelessWidget {
                 child: Row(
                   children: const [
                     PopCard(
+                      title: "Cat cute",
+                      price: "\$150",
                       imageURL:
                           "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
                     ),
@@ -49,9 +51,15 @@ class HomeScreenUI extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
-                "New books",
+                "For You",
                 style: Theme.of(context).textTheme.titleLarge,
+              ),
+              const SizedBox(
+                height: 5,
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
