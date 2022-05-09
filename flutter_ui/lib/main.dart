@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/exercise1_book_ui/screen/screen.dart';
+import 'package:flutter_ui/exercise3_full_book_ui/screen/screen_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomeScreen(),
+        body: HomeScreenUI(),
       ),
     );
   }
