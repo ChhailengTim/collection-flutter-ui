@@ -14,17 +14,75 @@ class HomeScreenUI extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("New books"),
-              Row(
-                children: const [
-                  PopCard(),
-                ],
+              Text(
+                "New books",
+                style: Theme.of(context).textTheme.titleLarge,
               ),
-              const Text("New books"),
-              Row(
-                children: const [
-                  PopCard(),
-                ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: const [
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                  ],
+                ),
+              ),
+              Text(
+                "New books",
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: const [
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                    PopCard(
+                      imageURL:
+                          "https://m.media-amazon.com/images/I/51dZ2ODHTEL.jpg",
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
