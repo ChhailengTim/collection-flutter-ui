@@ -24,7 +24,10 @@ class PopCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const InforScreen(),
+                builder: (context) => const InforScreen(
+                  imageURL:
+                      "https://m.media-amazon.com/images/M/MV5BMjA5YTFlNzYtZmU5Ni00Y2Y2LWFmMTktNGFlZjE0MWIwMDJmXkEyXkFqcGdeQXVyMjMwODE4ODI@._V1_.jpg",
+                ),
               ),
             );
           },
