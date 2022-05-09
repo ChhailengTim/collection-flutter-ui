@@ -10,7 +10,7 @@ class Custom_Card extends StatelessWidget {
       {Key? key, this.imageURL, this.price, this.title, this.onTap})
       : super(key: key);
 
-  Widget priceLable(BuildContext context, String price) {
+  Widget priceLabel(BuildContext context, String price) {
     return Container(
       padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
@@ -51,7 +51,7 @@ class Custom_Card extends StatelessWidget {
           title ?? "No Title",
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(),
         ),
-        priceLable(context, price ?? "Free"),
+        priceLabel(context, price ?? "Free"),
       ],
     );
   }
