@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class InforScreen extends StatelessWidget {
@@ -10,6 +9,7 @@ class InforScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Detail Page"),
       ),
+      body: Column(),
     );
   }
 }
