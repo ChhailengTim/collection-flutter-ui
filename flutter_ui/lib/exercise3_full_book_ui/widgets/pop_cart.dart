@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/exercise3_full_book_ui/screen/infor_screen.dart';
+import 'package:flutter_ui/exercise3_full_book_ui/screen/inform_screen.dart';
 
 class PopCard extends StatelessWidget {
   final String? imageURL;
@@ -8,10 +8,9 @@ class PopCard extends StatelessWidget {
   const PopCard({Key? key, this.imageURL, this.price, this.title})
       : super(key: key);
 
+  // ignore: non_constant_identifier_names
   Widget LabelPrice(String price) {
-    return Container(
-      child: Text(price),
-    );
+    return Text(price);
   }
 
   @override
@@ -24,7 +23,7 @@ class PopCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const InforScreen(
+                builder: (context) => const InformScreen(
                   imageURL:
                       "https://m.media-amazon.com/images/M/MV5BMjA5YTFlNzYtZmU5Ni00Y2Y2LWFmMTktNGFlZjE0MWIwMDJmXkEyXkFqcGdeQXVyMjMwODE4ODI@._V1_.jpg",
                 ),
