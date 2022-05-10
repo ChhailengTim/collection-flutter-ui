@@ -17,9 +17,15 @@ class _ButtonShowState extends State<ButtonShow> {
         appBar: AppBar(
           title: const Text("Button Tap"),
         ),
-        body: Stack(
+        body: Column(
+          mainAxisAlignment: number == 0
+              ? MainAxisAlignment.start
+              : number == 1
+                  ? MainAxisAlignment.center
+                  : MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
+            Row(
               mainAxisAlignment: number == 0
                   ? MainAxisAlignment.start
                   : number == 1
@@ -27,31 +33,21 @@ class _ButtonShowState extends State<ButtonShow> {
                       : MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: number == 0
-                      ? MainAxisAlignment.start
-                      : number == 1
-                          ? MainAxisAlignment.center
-                          : MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          // if (number == 2) {
-                          //   number = 0;
-                          // } else {
-                          //   number = number + 1;
-                          // }
-                          number == 2 ? number = 0 : number = number + 1;
-                        });
-                      },
-                      child: const Icon(
-                        Icons.heart_broken,
-                        size: 50,
-                      ),
-                    ),
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      // if (number == 2) {
+                      //   number = 0;
+                      // } else {
+                      //   number = number + 1;
+                      // }
+                      number == 2 ? number = 0 : number = number + 1;
+                    });
+                  },
+                  child: const Icon(
+                    Icons.heart_broken,
+                    size: 50,
+                  ),
                 ),
               ],
             ),
