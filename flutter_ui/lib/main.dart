@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/1_material_app_scaffold/lesson3_container.dart';
+import 'package:flutter_ui/1_material_app_scaffold/lesson4_container.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Taps(),
+        body: Window(),
       ),
     );
   }
