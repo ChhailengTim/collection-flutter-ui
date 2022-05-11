@@ -9,5 +9,6 @@ void main() {
           ? "B"
           : "A";
 
+  // ignore: avoid_print
   print(result);
 }
