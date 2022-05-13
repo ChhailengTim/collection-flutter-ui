@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/1_material_app_scaffold/lesson13_navigtor_new_page.dart';
+import 'package:flutter_ui/1_material_app_scaffold/lesson13_navigator_new_page.dart';
 
 class TestNavigator extends StatelessWidget {
   const TestNavigator({Key? key}) : super(key: key);
