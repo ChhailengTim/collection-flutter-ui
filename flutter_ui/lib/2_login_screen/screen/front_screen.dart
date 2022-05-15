@@ -45,48 +45,48 @@ class HomeScreen extends StatelessWidget {
                         "https://github.com/fluttermapp/flutter_course_app_2/blob/main/images/welcome.png?raw=true"),
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    debugPrint("Sign in");
-                  },
-                  child: Container(
-                    child: Text(
-                      "Sign in",
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(3.0),
-                        bottomRight: Radius.circular(3.0),
-                        bottomLeft: Radius.circular(3.0),
-                        topLeft: Radius.circular(3.0),
+                Container(
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      padding: MaterialStateProperty.all(
+                        const EdgeInsets.symmetric(
+                          vertical: 15,
+                          horizontal: 15,
+                        ),
                       ),
-                      color: Colors.white,
+                      shape: MaterialStateProperty.all(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
                     ),
+                    child: const Text("Sign in"),
+                    onPressed: () {
+                      debugPrint("Sign in");
+                    },
                   ),
                 ),
                 const SizedBox(
                   height: 5,
                 ),
-                GestureDetector(
-                  onTap: () {
-                    debugPrint("Register");
-                  },
-                  child: Container(
-                    child: Text(
-                      "Register",
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(3.0),
-                        bottomRight: Radius.circular(3.0),
-                        bottomLeft: Radius.circular(3.0),
-                        topLeft: Radius.circular(3.0),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    padding: MaterialStateProperty.all(
+                      const EdgeInsets.symmetric(
+                        vertical: 15,
+                        horizontal: 15,
                       ),
-                      color: Colors.white,
+                    ),
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
                     ),
                   ),
+                  child: const Text("Register"),
+                  onPressed: () {
+                    debugPrint("Register");
+                  },
                 ),
               ],
             ),
