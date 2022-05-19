@@ -64,21 +64,26 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Container(
-              width: double.infinity,
-              height: 30,
-              margin: const EdgeInsets.symmetric(horizontal: 100),
-              alignment: Alignment.center,
-              child: const Text(
-                "Register",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    color: Colors.deepOrange),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(3),
+            GestureDetector(
+              onTap: () {
+                debugPrint("Clicked");
+              },
+              child: Container(
+                width: double.infinity,
+                height: 30,
+                margin: const EdgeInsets.symmetric(horizontal: 100),
+                alignment: Alignment.center,
+                child: const Text(
+                  "Register",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.deepOrange),
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(3),
+                ),
               ),
             ),
           ],
