@@ -43,22 +43,27 @@ class HomeScreen extends StatelessWidget {
                     "https://github.com/fluttermapp/flutter_course_app_2/blob/main/images/welcome.png?raw=true"),
               ),
             ),
-            Container(
-              width: double.infinity,
-              height: 30,
-              margin: const EdgeInsets.symmetric(horizontal: 100),
-              alignment: Alignment.center,
-              child: const Text(
-                "Sign In",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    color: Colors.white),
-              ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(3),
-                //color: Colors.white,
-                border: Border.all(color: Colors.white, width: 3),
+            GestureDetector(
+              onTap: () {
+                debugPrint("Clicked");
+              },
+              child: Container(
+                width: double.infinity,
+                height: 30,
+                margin: const EdgeInsets.symmetric(horizontal: 100),
+                alignment: Alignment.center,
+                child: const Text(
+                  "Sign In",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.white),
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(3),
+                  //color: Colors.white,
+                  border: Border.all(color: Colors.white, width: 3),
+                ),
               ),
             ),
             const SizedBox(
