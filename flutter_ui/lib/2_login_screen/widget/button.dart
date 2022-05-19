@@ -8,12 +8,19 @@ class SignInButton extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Colors.deepOrangeAccent,
       body: Container(
-        //alignment: Alignment.center,
-        child: const Text("Sign in"),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(3),
-          color: Colors.white,
+        width: double.infinity,
+        height: 30,
+        margin: const EdgeInsets.symmetric(horizontal: 15),
+        alignment: Alignment.center,
+        child: const Text(
+          "Sign In",
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 15, color: Colors.white),
         ),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(3),
+            //color: Colors.white,
+            border: Border.all(color: Colors.orange)),
       ),
     );
   }
