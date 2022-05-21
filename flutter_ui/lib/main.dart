@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '2_login_screen/screen/front_screen.dart';
+import '2_login_screen/screen/login_screen.dart';
+import '2_login_screen/screen/signup_screen.dart';
 import 'travel_ui/screen.dart';
 
 void main() {
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomePageTravel(),
+        body: LoginScreen(),
       ),
     );
   }
