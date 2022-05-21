@@ -37,11 +37,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              child: const Image(
-                image: NetworkImage(
-                    "https://github.com/fluttermapp/flutter_course_app_2/blob/main/images/welcome.png?raw=true"),
-              ),
+            const Image(
+              image: NetworkImage(
+                  "https://github.com/fluttermapp/flutter_course_app_2/blob/main/images/welcome.png?raw=true"),
             ),
             GestureDetector(
               onTap: () {
