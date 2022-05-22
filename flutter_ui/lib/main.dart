@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'real-estate-app/screen/profile_screen.dart';
+import 'package:flutter_ui/real-estate-app/screen/home_scree.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ProfileScreen(),
+        body: HomeScreen(),
       ),
     );
   }
