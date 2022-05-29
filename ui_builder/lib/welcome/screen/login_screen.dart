@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_builder/welcome/module/button.dart';
 import 'package:ui_builder/welcome/module/email_phone_input.dart';
 import 'package:ui_builder/welcome/module/password_input.dart';
+import 'package:ui_builder/welcome/screen/reset_password_screen.dart';
 import 'package:ui_builder/welcome/screen/signup_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -31,15 +32,23 @@ class LoginScreen extends StatelessWidget {
               const PasswordInput(
                 text: "Password",
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 215),
-                child: RichText(
-                  textScaleFactor: 1,
-                  text: const TextSpan(
-                    text: "Forgot your password?",
-                    style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 15,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ResetPassword()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 215),
+                  child: RichText(
+                    textScaleFactor: 1,
+                    text: const TextSpan(
+                      text: "Forgot your password?",
+                      style: TextStyle(
+                        color: Colors.blueAccent,
+                        fontSize: 15,
+                      ),
                     ),
                   ),
                 ),
