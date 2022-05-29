@@ -36,6 +36,16 @@ class LoginScreen extends StatelessWidget {
                 color: Colors.blueAccent,
                 textColor: Colors.white,
               ),
+              RichText(
+                textScaleFactor: 1,
+                text: const TextSpan(
+                  text: "Forgot your password?",
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 15,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
