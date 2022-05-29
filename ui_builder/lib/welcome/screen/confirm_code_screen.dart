@@ -19,14 +19,14 @@ class ConfirmCodeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Reset password",
+                "Check your code",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(
                 height: 5,
               ),
               const Text(
-                  "Enter the Email or Phone associated with your account and we'll send a code instruction to reset your password."),
+                  "We have sent a password recover instructions to your Email or Phone."),
             ],
           ),
           const SizedBox(
