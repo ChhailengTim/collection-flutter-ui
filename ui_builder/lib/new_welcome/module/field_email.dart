@@ -24,9 +24,9 @@ class TextEmail extends StatelessWidget {
           decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
-                color: Colors.black38,
-                blurRadius: 15,
-                offset: Offset(3, 3),
+                color: Colors.black26,
+                blurRadius: 10,
+                offset: Offset(1, 2),
               ),
             ],
           ),
