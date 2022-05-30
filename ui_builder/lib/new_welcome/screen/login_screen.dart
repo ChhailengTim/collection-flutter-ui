@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
+import 'package:ui_builder/new_welcome/controller/tick_box.dart';
 
 import '../module/field_password.dart';
 import '../module/new_button.dart';
@@ -11,6 +13,7 @@ class NewLoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final TickBox tickBox = Get.put(TickBox());
     return Scaffold(
       backgroundColor: Colors.blue[500],
       appBar: AppBar(
@@ -58,8 +61,16 @@ class NewLoginScreen extends StatelessWidget {
                   height: 30,
                 ),
                 Row(
-                  children: const [
-                    Text(
+                  children: [
+                    Obx(
+                      () => Checkbox(
+                        value: tickBox.tick.value,
+                        onChanged: (value) {
+                          tickBox.tick.value = !tickBox.tick.value;
+                        },
+                      ),
+                    ),
+                    const Text(
                       "Remember me",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -133,7 +144,7 @@ class NewLoginScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      "Don't have an accoutn?",
+                      "Don't have an account?",
                       style: TextStyle(
                         color: Colors.white,
                       ),
