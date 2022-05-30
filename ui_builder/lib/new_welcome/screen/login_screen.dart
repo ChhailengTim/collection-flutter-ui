@@ -4,6 +4,7 @@ import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
 import 'package:ui_builder/new_welcome/controller/tick_box.dart';
 
+import '../../welcome/screen/signup_screen.dart';
 import '../module/field_password.dart';
 import '../module/new_button.dart';
 import '../module/field_email.dart';
@@ -142,20 +143,28 @@ class NewLoginScreen extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
+                  children: [
+                    const Text(
                       "Don't have an account?",
                       style: TextStyle(
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Text(
-                      "Sign up",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignUpScreen()));
+                      },
+                      child: const Text(
+                        "Sign up",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
