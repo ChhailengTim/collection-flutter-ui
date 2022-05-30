@@ -43,6 +43,14 @@ class SignUpScreen extends StatelessWidget {
               color: Colors.blueAccent,
               textColor: Colors.white,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text("-"),
+                Text("OR"),
+                Text("-"),
+              ],
+            ),
             SignInButton(
               Buttons.Facebook,
               onPressed: () {},
