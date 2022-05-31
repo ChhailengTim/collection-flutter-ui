@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
 
 class Increasment extends GetxController {
-  var counter = 0.obs;
+  final counter = RxInt(0);
 
-  void increasment() {
-    counter++;
+  increasment() {
+    counter.value++;
   }
 }

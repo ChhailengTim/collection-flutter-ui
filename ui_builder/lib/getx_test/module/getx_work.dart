@@ -9,16 +9,13 @@ class WorkGetX extends StatelessWidget {
   Widget build(BuildContext context) {
     final increasment = Get.put(Increasment());
     return Scaffold(
-      body: Center(
-        child: Obx(
-          () => const Text("TEst"),
+      floatingActionButton: Obx(
+        () => FloatingActionButton(
+          onPressed: () {
+            increasment.counter;
+          },
+          child: const Icon(Icons.add),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          increasment.counter();
-        },
-        child: const Icon(Icons.add),
       ),
     );
   }
