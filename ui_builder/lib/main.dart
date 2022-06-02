@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'slider/slider_screen.dart';
+import 'slider_setstate/slider_screen.dart';
 
 void main() {
   runApp(const MyApp());

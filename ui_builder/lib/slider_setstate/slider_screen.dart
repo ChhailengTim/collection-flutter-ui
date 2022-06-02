@@ -8,9 +8,9 @@ class SliderScreen extends StatefulWidget {
 }
 
 class _SliderScreenState extends State<SliderScreen> {
-  double range = 1.0;
-  double start = -1;
-  double stop = -1;
+  double range = 1;
+  double start = 1;
+  double stop = 100;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,12 +34,12 @@ class _SliderScreenState extends State<SliderScreen> {
             },
             onChangeStart: (double v) {
               setState(() {
-                start = v;
+                range = v;
               });
             },
             onChangeEnd: (double v) {
               setState(() {
-                stop = v;
+                range = v;
               });
             },
           ),
