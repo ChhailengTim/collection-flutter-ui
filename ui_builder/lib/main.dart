@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'slider_setstate/slider_screen.dart';
+import 'slider_getx/slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SliderScreen(),
+      home: SliderScreenGetX(),
     );
   }
 }
