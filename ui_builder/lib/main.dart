@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_builder/change_colors/change_colors.dart';
+
+import 'slider/slider_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChangeColors(),
+      home: SliderScreen(),
     );
   }
 }
