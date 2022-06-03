@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'slider_getx/slider.dart';
+import 'package:ui_builder/future_builder/future.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SliderScreenGetX(),
+      home: FutureData(),
     );
   }
 }
