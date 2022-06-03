@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_builder/future_builder/future.dart';
+import 'package:ui_builder/future_builder/futurebuilder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FutureData(),
+      home: FutureBuilderScreen(),
     );
   }
 }
