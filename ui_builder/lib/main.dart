@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'stream_builder/stream_builder.dart';
+import 'package:ui_builder/api_start/screen/home_scree.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StreamBuilderScreen(),
+      home: HomeScreen(),
     );
   }
 }
