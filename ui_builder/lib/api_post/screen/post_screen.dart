@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_builder/post_api/controller/https.dart';
-import 'package:ui_builder/post_api/module/posts.dart';
+import 'package:ui_builder/api_post/controller/https.dart';
+import 'package:ui_builder/api_post/module/posts.dart';
 
 class PostScren extends StatefulWidget {
   const PostScren({Key? key}) : super(key: key);

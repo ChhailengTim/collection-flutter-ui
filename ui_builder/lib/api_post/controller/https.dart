@@ -1,5 +1,5 @@
 import 'package:http/http.dart' as http;
-import 'package:ui_builder/post_api/module/posts.dart';
+import 'package:ui_builder/api_post/module/posts.dart';
 
 class HttpRequest {
   Future<List<Posts>?> getPosts() async {
