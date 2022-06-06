@@ -40,7 +40,7 @@ class _PostScrenState extends State<PostScren> {
           child: CircularProgressIndicator(),
         ),
         child: ListView.builder(
-          itemCount: posts!.length,
+          itemCount: posts?.length,
           itemBuilder: (context, index) {
             return Container(
               padding: const EdgeInsets.all(10),
