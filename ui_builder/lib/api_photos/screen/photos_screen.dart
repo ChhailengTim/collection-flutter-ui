@@ -11,6 +11,7 @@ class PhotosScreen extends StatefulWidget {
 
 class _PhotosScreenState extends State<PhotosScreen> {
   List<PhotosApi>? photosapi;
+
   var isLoaded = false;
 
   @override
@@ -50,18 +51,15 @@ class _PhotosScreenState extends State<PhotosScreen> {
                     photosapi![index].albumId.toString(),
                   ),
                   Image(
-                    image: NetworkImage(photosapi![index].url!),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Image(
                     image: NetworkImage(photosapi![index].thumbnailUrl!),
                   ),
                   Text(
                     photosapi![index].id.toString(),
                   ),
                   Text(photosapi![index].title ?? "title"),
+                  Image(
+                    image: NetworkImage(photosapi![index].url!),
+                  ),
                 ],
               ),
             );
