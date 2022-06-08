@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_builder/api_photos/screen/photos_screen.dart';
+import 'package:ui_builder/api_todos/screen/todos_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PhotosScreen(),
+      home: TodosScrenn(),
     );
   }
 }
