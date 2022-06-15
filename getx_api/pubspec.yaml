@@ -31,7 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
-  getxbottombar: ^0.0.1
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_lints: ^2.0.0
