@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens/post_screen.dart';
+import 'post_api/screens/post_screen.dart';
+
 
 void main() {
   runApp(const MyApp());

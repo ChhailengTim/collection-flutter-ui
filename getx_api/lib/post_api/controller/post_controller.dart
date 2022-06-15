@@ -8,6 +8,7 @@ class Virak extends GetxController {
   final apiBaseHelper = ApiBaseHelper();
   final postmodel = PostModel().obs;
   final listpost = <PostModel>[].obs;
+
   Future onFetchPost() async {
     apiBaseHelper
         .onNetworkRequesting(
