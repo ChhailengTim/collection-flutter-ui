@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_api/photos_api/controller/photo_controller.dart';
+import 'package:getx_api/photos_api/screen/detail_screen.dart';
 
 class PhotoScreen extends StatefulWidget {
   const PhotoScreen({Key? key}) : super(key: key);
@@ -27,11 +28,19 @@ class _PhotoScreenState extends State<PhotoScreen> {
         () => ListView.builder(
             itemCount: photoController.listPhoto.length,
             itemBuilder: (context, index) {
-              return Hero(
-                tag: "thumbnail",
-                child: Image.network(
-                  "${photoController.listPhoto[index].thumbnailUrl}",
-                  fit: BoxFit.contain,
+              return GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DetailScreen()));
+                },
+                child: Card(
+                  child: Hero(
+                    tag: photoController.listPhoto[index],
+                    child: Image.network(
+                      "${photoController.listPhoto[index].thumbnailUrl}",
+                      height: 100,
+                    ),
+                  ),
                 ),
               );
             }),
