@@ -68,7 +68,7 @@ class TikTokProfileScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
+                  children: const [
                     DataModel(
                       nubmers: "58",
                       data: "Following",

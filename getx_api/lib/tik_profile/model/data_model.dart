@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DataModel extends StatelessWidget {
-  DataModel({
+  const DataModel({
     Key? key,
     this.nubmers,
     this.data,
   }) : super(key: key);
-  String? nubmers;
-  String? data;
+  final String? nubmers;
+  final String? data;
 
   @override
   Widget build(BuildContext context) {
