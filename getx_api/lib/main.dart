@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'tik_profile/screen/profile_screen.dart';
+import 'package:getx_api/deatail_screen/screen/custom_detail_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TikTokProfileScreen(),
+      home: CustomDetailScreen(),
     );
   }
 }
