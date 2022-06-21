@@ -10,10 +10,11 @@ class SignUpScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: TextFormField(
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
+              hintText: "Email",
               border: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Colors.black,
+                borderRadius: BorderRadius.circular(25),
+                borderSide: const BorderSide(
                   width: 5.0,
                 ),
               ),
