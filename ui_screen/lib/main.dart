@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_screen/welcome_screen.dart';
+import 'package:ui_screen/screens/welcome_screen.dart';
+
+import 'constant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        fontFamily: "Cairo",
+        scaffoldBackgroundColor: kBackgroundColor,
+        textTheme: Theme.of(context).textTheme.apply(
+              displayColor: kTextColor,
+            ),
+      ),
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }
