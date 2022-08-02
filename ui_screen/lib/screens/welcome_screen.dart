@@ -4,6 +4,7 @@ import 'package:ui_screen/models/bottomnav_bar.dart';
 import 'package:ui_screen/models/search_bar.dart';
 import 'package:ui_screen/screens/categery_screen.dart';
 import 'package:ui_screen/screens/detail_screen.dart';
+import 'package:ui_screen/screens/diet_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -62,7 +63,14 @@ class WelcomeScreen extends StatelessWidget {
                         CategeryCard(
                           svgPic: "assets/icons/Hamburger.svg",
                           title: "Diet Recommendation",
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const DietScreen(),
+                              ),
+                            );
+                          },
                         ),
                         const CategeryCard(
                           svgPic: "assets/icons/Excrecises.svg",
