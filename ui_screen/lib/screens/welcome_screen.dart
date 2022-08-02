@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ui_screen/models/bottomnav_bar.dart';
+import 'package:ui_screen/models/search_bar.dart';
 import 'package:ui_screen/screens/categery_screen.dart';
+import 'package:ui_screen/screens/detail_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -48,24 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                           fontSize: 25,
                         ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 30),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(29.5),
-                    ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        icon: SvgPicture.asset("assets/icons/search.svg"),
-                        border: InputBorder.none,
-                      ),
-                    ),
-                  ),
+                  const SearchBar(),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -82,9 +68,16 @@ class WelcomeScreen extends StatelessWidget {
                           svgPic: "assets/icons/Excrecises.svg",
                           title: "Kegel Excrecises",
                         ),
-                        const CategeryCard(
+                        CategeryCard(
                           svgPic: "assets/icons/Meditation_women_small.svg",
                           title: "Meditation",
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const DetailScreen(),
+                                ));
+                          },
                         ),
                         const CategeryCard(
                           svgPic: "assets/icons/yoga.svg",
@@ -99,6 +92,7 @@ class WelcomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
