@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_screen/constant.dart';
+import 'package:ui_screen/models/bottomnav_bar.dart';
 import 'package:ui_screen/models/diet_card.dart';
 import 'package:ui_screen/models/non_fetch_fruite_detial.dart';
 
@@ -143,6 +144,7 @@ class DietScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
