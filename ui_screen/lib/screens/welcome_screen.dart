@@ -5,6 +5,8 @@ import 'package:ui_screen/models/search_bar.dart';
 import 'package:ui_screen/screens/categery_screen.dart';
 import 'package:ui_screen/screens/detail_screen.dart';
 import 'package:ui_screen/screens/diet_screen.dart';
+import 'package:ui_screen/screens/kegel_screen.dart';
+import 'package:ui_screen/screens/yoga_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -72,9 +74,17 @@ class WelcomeScreen extends StatelessWidget {
                             );
                           },
                         ),
-                        const CategeryCard(
+                        CategeryCard(
                           svgPic: "assets/icons/Excrecises.svg",
                           title: "Kegel Excrecises",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const KegelDetail(),
+                              ),
+                            );
+                          },
                         ),
                         CategeryCard(
                           svgPic: "assets/icons/Meditation_women_small.svg",
@@ -87,7 +97,15 @@ class WelcomeScreen extends StatelessWidget {
                                 ));
                           },
                         ),
-                        const CategeryCard(
+                        CategeryCard(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const YogaScreen(),
+                              ),
+                            );
+                          },
                           svgPic: "assets/icons/yoga.svg",
                           title: "Yoga",
                         ),
