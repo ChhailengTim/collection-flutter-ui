@@ -51,6 +51,9 @@ class DietCard extends StatelessWidget {
                       fontSize: 18,
                     ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
               Text(
                 qty ?? "non",
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
